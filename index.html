@@ -3,33 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-Do List</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Login</title>
+  <link rel="stylesheet" href="auth.css">
 </head>
 <body>
-  <div class="header">
-    <h1>To-Do List</h1>
-    <div class="profile">
-      <img src="profile-pic.png" alt="Profile Picture" id="profile-pic">
-      <span id="user-name">Agustinus DonBofis</span>
-    </div>
-  </div>
   <div class="container">
-    <input type="text" id="new-task" placeholder="Add new task">
-    <input type="datetime-local" id="task-deadline">
-    <button id="add-task-btn">Add Task</button>
-    <div class="points">Points: <span id="points">0</span></div>
-    <div id="task-lists">
-      <h2>Tasks</h2>
-      <ul id="task-list"></ul>
-      <h2>Completed Tasks</h2>
-      <ul id="completed-tasks"></ul>
-      <h2>Deleted Tasks</h2>
-      <ul id="deleted-tasks"></ul>
-      <h2>Changed Status Tasks</h2>
-      <ul id="changed-status-tasks"></ul>
-    </div>
+    <h1>Login</h1>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
   </div>
-  <script src="script.js"></script>
+  <script src="login.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
     if (storedPassword && storedPassword === password) {
       alert('Login successful!');
       localStorage.setItem('currentUser', username);
-      window.location.href = 'index.html';
+      window.location.href = 'main.html';
     } else {
       alert('Invalid username or password.');
     }
